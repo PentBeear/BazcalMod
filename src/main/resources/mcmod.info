@@ -1,0 +1,16 @@
+[
+{
+  "modid": "bazcalmod",
+  "name": "Bazcal Minecraft Edition",
+  "description": "Bazcal but in minecraft?",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["PentBeear"],
+  "credits": "Wyktert, Vent, Bluish, ForgingMetal",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

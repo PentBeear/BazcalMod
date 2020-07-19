@@ -1,0 +1,9 @@
+{
+  "bazcalmod.spoon": {
+    "category" : "player",
+    "sounds": [{
+        "name": "bazcalmod:spoon_sound",
+        "stream": false
+      }
+    ]
+  }
