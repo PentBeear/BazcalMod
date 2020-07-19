@@ -17,4 +17,4 @@ Reason: For some reason minecrafts default jvm is still java 1.8.0_51
 and i use new features that are hard to replace in the older versions.
 
 Extra tips:
-When starting the Bazcal Flip don't MOVE. or jump off a cliff. You currently lag a bit and who knows what happens if you are falling and that happens. (most likely nothing but still dont do it)
+When starting the Bazcal Flip don't MOVE. or jump off a cliff. You currently lag a bit and who knows what happens if you are falling and that happens aka ban. (most likely nothing but still dont do it)
