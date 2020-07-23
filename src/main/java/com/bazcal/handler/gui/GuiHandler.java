@@ -2,6 +2,7 @@ package com.bazcal.handler.gui;
 
 import com.bazcal.gui.GuiDisplay;
 import com.bazcal.gui.GuiResult;
+import com.bazcal.gui.LocationGui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -15,6 +16,7 @@ public class GuiHandler implements IGuiHandler {
 
 	
 	public static final int MAIN_GUI = 0;
+	public static final int LOCATION_GUI = 1;
 
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
@@ -28,6 +30,13 @@ public class GuiHandler implements IGuiHandler {
 	    	System.out.println("MAIN GUI BEING LOADED");
 	        return new GuiDisplay();
 	    }
+	    if (ID == LOCATION_GUI)  
+	    {
+	    	System.out.println("LOCATION GUI BEING LOADED");
+	        return new LocationGui();
+	    }
+	    
+	    
 	    return null;
 	}
 

@@ -44,6 +44,7 @@ public class ApiGet { //
 	public static ArrayList<String> itemNames = new ArrayList<String>(Arrays.asList());
 	public static ArrayList<Double> itemInvests = new ArrayList<Double>(Arrays.asList());
 	public static ArrayList<Double> itemProfits = new ArrayList<Double>(Arrays.asList());
+	public static ArrayList<Double> itemEvolumes = new ArrayList<Double>(Arrays.asList());
 	public static void main(String[] args) throws IOException {
 
 
@@ -83,6 +84,14 @@ public class ApiGet { //
 	    	{
 	    		itemProfits.add(eprofit);
 	    		System.out.print(" " + eprofit);
+	    		System.out.println();
+	    	}
+	    	
+	    	if (itemEvolumes.size() > 5){}
+	    	else
+	    	{
+	    		itemEvolumes.add(evolume);
+	    		System.out.print(" " + evolume);
 	    		System.out.println();
 	    	}
 
@@ -165,25 +174,34 @@ public class ApiGet { //
         {
         	
         	System.out.println(itemNames.size());
-        	GuiResult.displayedItem1 = itemNames.get(5) + " Invest " + itemInvests.get(5) + " Profit " + itemProfits.get(5);
-        	GuiResult.displayedItem2 = itemNames.get(4) + " Invest " + itemInvests.get(4) + " Profit " + itemProfits.get(4);
-        	GuiResult.displayedItem3 = itemNames.get(3) + " Invest " + itemInvests.get(3) + " Profit " + itemProfits.get(3);
-        	GuiResult.displayedItem4 = itemNames.get(2) + " Invest " + itemInvests.get(2) + " Profit " + itemProfits.get(2);
-        	GuiResult.displayedItem5 = itemNames.get(1) + " Invest " + itemInvests.get(1) + " Profit " + itemProfits.get(1);
-        	GuiResult.displayedItem6 = itemNames.get(0) + " Invest " + itemInvests.get(0) + " Profit " + itemProfits.get(0);
-        	GuiResult.length = new int[] { GuiResult.displayedItem1.length() , GuiResult.displayedItem2.length() , GuiResult.displayedItem3.length() , GuiResult.displayedItem4.length() , GuiResult.displayedItem5.length() , GuiResult.displayedItem6.length() };
+        	GuiResult.displayedItem1[0] = itemNames.get(5) + " Invest " + itemInvests.get(5) + " Profit " + itemProfits.get(5);
+        	GuiResult.displayedItem2[0] = itemNames.get(4) + " Invest " + itemInvests.get(4) + " Profit " + itemProfits.get(4);
+        	GuiResult.displayedItem3[0] = itemNames.get(3) + " Invest " + itemInvests.get(3) + " Profit " + itemProfits.get(3);
+        	GuiResult.displayedItem4[0] = itemNames.get(2) + " Invest " + itemInvests.get(2) + " Profit " + itemProfits.get(2);
+        	GuiResult.displayedItem5[0] = itemNames.get(1) + " Invest " + itemInvests.get(1) + " Profit " + itemProfits.get(1);
+        	GuiResult.displayedItem6[0] = itemNames.get(0) + " Invest " + itemInvests.get(0) + " Profit " + itemProfits.get(0);
+        	
+        	
+        	
+        	GuiResult.displayedItem1[1] = itemNames.get(5) + " Buy Amount " + itemEvolumes.get(5) + " Profit " + itemProfits.get(5);
+        	GuiResult.displayedItem2[1] = itemNames.get(4) + " Buy Amount " + itemEvolumes.get(4) + " Profit " + itemProfits.get(4);
+        	GuiResult.displayedItem3[1] = itemNames.get(3) + " Buy Amount " + itemEvolumes.get(3) + " Profit " + itemProfits.get(3);
+        	GuiResult.displayedItem4[1] = itemNames.get(2) + " Buy Amount " + itemEvolumes.get(2) + " Profit " + itemProfits.get(2);
+        	GuiResult.displayedItem5[1] = itemNames.get(1) + " Buy Amount " + itemEvolumes.get(1) + " Profit " + itemProfits.get(1);
+        	GuiResult.displayedItem6[1] = itemNames.get(0) + " Buy Amount " + itemEvolumes.get(0) + " Profit " + itemProfits.get(0);
+        	GuiResult.length = new int[] { GuiResult.displayedItem1[0].length() , GuiResult.displayedItem2[0].length() , GuiResult.displayedItem3[0].length() , GuiResult.displayedItem4[0].length() , GuiResult.displayedItem5[0].length() , GuiResult.displayedItem6[0].length() };
         	GuiResult.endLength = getMax(GuiResult.length);
         }
         else
         {
         	
         	System.out.println(itemNames.size());
-        	GuiResult.displayedItem1 = "ERROR FALSE REQUEST";
-        	GuiResult.displayedItem2 = "ERROR FALSE REQUEST";
-        	GuiResult.displayedItem3 = "ERROR FALSE REQUEST";
-        	GuiResult.displayedItem4 = "ERROR FALSE REQUEST";
-        	GuiResult.displayedItem5 = "ERROR FALSE REQUEST";
-        	GuiResult.displayedItem6 = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem1[0] = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem2[0] = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem3[0] = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem4[0] = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem5[0] = "ERROR FALSE REQUEST";
+        	GuiResult.displayedItem6[0] = "ERROR FALSE REQUEST";
         	GuiResult.endLength = 0;
         }
         	

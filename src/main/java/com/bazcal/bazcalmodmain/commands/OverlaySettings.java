@@ -11,6 +11,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import com.bazcal.handler.sound.SoundHandler;
 import com.bazcal.bazcalmodmain.BazcalMainMod;
+import com.bazcal.gui.LocationGui;
 
 
 @SideOnly(Side.CLIENT)
@@ -38,6 +39,12 @@ public class OverlaySettings extends CommandBase {
 			BazcalMainMod.guiC = params[3];
 			BazcalMainMod.guiH = parseInt(params[4]);
 			BazcalMainMod.guiB = parseBoolean(params[5]);
+			LocationGui.guiX = parseInt(params[0]); // Sets the gui X and Y respectively
+			LocationGui.guiY = parseInt(params[1]);
+			LocationGui.guiS = (float) parseDouble(params[2]);
+			LocationGui.guiC = params[3];
+			LocationGui.guiH = parseInt(params[4]);
+			LocationGui.guiB = parseBoolean(params[5]);
 			BazcalMainMod.refreshConfig();
 		    }
 		else
