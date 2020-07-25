@@ -2,6 +2,19 @@
 The Bazcal Discord bot but implemented into Minecraft!
 
 
+
+
+
+
+
+
+
+
+
+
+
+DEPRECATED:
+
 There are extra steps in installing this mod currently
 
 Go the oracle java 8 JRE download page (https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
